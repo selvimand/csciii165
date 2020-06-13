@@ -1,0 +1,22 @@
+td,table {
+    border:1px solid black;
+}
+
+
+a:link {
+  colot: red;
+}
+
+
+a:visited { 
+color: green;
+ }
+
+
+a:hover {
+color: hotpink;
+}
+
+a:active {
+ color: blue;
+}
