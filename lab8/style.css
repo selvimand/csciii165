@@ -1,0 +1,45 @@
+td,table {
+    border:1px solid black;
+}
+
+
+a:link {
+  colot: red;
+}
+
+
+a:visited { 
+color: green;
+ }
+
+
+a:hover {
+color: hotpink;
+}
+
+a:active {
+ color: blue;
+}
+a: active{
+  color:blue;
+}
+
+td,th,table {
+ borfer: 1px solid black;
+ border-collapse : collapse;
+}
+
+table table tr td {
+  color:#ff6347
+}
+
+h3{
+background-color :#00b33c
+color: white;
+border: 3px solid black;
+}
+
+td h3{
+background-color: #ff9999;
+color: black;
+}
