@@ -1,0 +1,81 @@
+
+<html>
+<head>
+   <style>
+     .inlinestyle{
+       display: inline-block;
+       width: 200px;
+
+     }
+     .blockstyle{
+       display: block;
+          }
+     #hidden{
+
+       visibility: hidden;
+     }
+     #inlineblock{
+       display: inline-block;
+       width: 200px
+       height: 200px;
+       background-color: yellow;
+     }
+     #inlines{
+       display: inline;
+       width: 200px
+       height: 200px;
+       background-color: yellow;
+     }
+     #blocks{
+       display:block;
+       width: 200px;
+       height: 200px;
+       background-color: yellow;
+     }
+     </style>
+</head>
+<body>
+    <p> 1. Display a list of links as a horizontal menu:
+     <ul style="background-color: azure; text-align: center;"</p>
+       <li class="inlinestyle">
+         <a href="https://www.w3schools.com/html/default.asp">
+           HTML reference
+           </a>
+           </li>
+           <li class="inlinestyle">
+             <a href="https://www.w3schools.com/css/default.asp">
+               CSS reference
+               </a>
+               </li>
+               <li class="inlinestyle">
+                 <a href="https://www.w3schools.com/js/default.asp">
+                Javascript reference
+                   </a>
+                   </li>
+                   </ul>
+      <ul>
+<p> 2. Display links as a block element:</p>
+  <a class="blockstyle" href="https://www.w3schools.com/html/default.asp">
+         HTML reference
+
+   </a>
+      <a class="blockStyle" href="https://www.w3schools.com/css/default.asp">
+           CSS reference
+           </a>
+     <a class="blockStyle" href="https://www.w3schools.com/js/default.asp">
+       Javascript reference
+     </a>
+     </ul>
+
+
+     <h1 id="hidden"> This text should be hidden.</h1>
+   it is a <span id="inlineblock"> long established fact  </span> that a reader will be distracted by the readable content of a page when looking at its layout.
+The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+readable English.
+ Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+many web sites still in their infancy.
+<span id="inlines"> Various versions </span> have evolved over the years, sometimes by accident,<span id="blocks"> sometimes on purpose
+injected </span> humour and the like.
+
+             </body>
+             </html>
