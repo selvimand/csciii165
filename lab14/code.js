@@ -13,7 +13,7 @@ add = function(){
   jQuery(document).ready(setup);
 
   // Function of subtraction button
-  Subtraction = function(){
+  subtraction = function(){
 
     result = parseInt(jQuery('#op1').html()) + parseInt(jQuery(' #op2').html());
     //jQuery(' #operand_1').html('123213213213');
@@ -22,13 +22,13 @@ add = function(){
     jQuery('#result').html(text + result);
   }
     setup=function(){
-      
+
       jQuery('#subbutton').click(subtraction);
     }
     jQuery(document).ready(setup);
 
     //Function of Multiplication button
-    Multiplication = function(){
+    multiplication = function(){
 
       result = parseInt(jQuery('#op1').html()) + parseInt(jQuery(' #op2').html());
       //jQuery(' #operand_1').html('123213213213');
@@ -38,7 +38,7 @@ add = function(){
     }
       setup = function(){
 
-        jQuery('#mulbutton').click(Multiplication);
+        jQuery('#mulbutton').click(multiplication);
       }
       jQuery(document).ready(setup);
 
