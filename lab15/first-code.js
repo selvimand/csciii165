@@ -3,47 +3,47 @@ add = function(){
   result = parseInt(jQuery('#operand1').val()) + parseInt(jQuery(' #operand2').val());
   text = jQuery('#operand1').val() + " + " + jQuery('#operand2').val() + " = "
   result = text + result;
-    jQuery('#result').text(result);
+    jQuery('#result').text(result)
+
     old_div_context = jQuery('#history').html();
     result ="<span id='add_style'>"+ result+"</span>";
     new_div_content = old_div_content + result+ '<br><br>';
     jQuery ('#history').html(new_div_content);
 }
 
-
 minus = function(){
 
-  result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery(' #operand2').val());
+  result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery('#operand2').val());
   text = jQuery('#operand1').val() + " - " + jQuery('#operand2').val() + " = "
   result = text + result;
-    jQuery('#result').text(result);
+    jQuery('#result').html(result)
     old_div_context = jQuery('#history').html();
     result ="<span id='min_style'>"+ result+"</span>";
     new_div_content = old_div_content + result+ '<br><br>';
     jQuery ('#history').html(new_div_content);
 }
 
-multiply = function(){
+multiply= function(){
 
-  result = parseInt(jQuery('#operand1').val()) * parseInt(jQuery(' #operand2').val());
+  result = parseInt(jQuery('#operand1').val()) * parseInt(jQuery('#operand2').val());
   text = jQuery('#operand1').val() + " * " + jQuery('#operand2').val() + " = "
   result = text + result;
-    jQuery('#result').text(result);
+    jQuery('#result').html(result)
     old_div_context = jQuery('#history').html();
-    result ="<span id='mul_style'>"+ result+"</span>";
-    new_div_content = old_div_content + result+ '<br><br>';
+    result ="<span id='mul_style'>"+ result + "</span>";
+    new_div_content = old_div_content + result + '<br>,br>';
     jQuery ('#history').html(new_div_content);
 }
 
 divide = function(){
 
-  result = parseInt(jQuery('#operand1').val()) / parseInt(jQuery(' #operand2').val());
+  result = parseInt(jQuery('#operand1').val()) / parseInt(jQuery('#operand2').val());
   text = jQuery('#operand1').val() + " / " + jQuery('#operand2').val() + " = "
   result = text + result;
-    jQuery('#result').html(result);
+    jQuery('#result').html(result)
     old_div_context = jQuery('#history').html();
     result ="<span id='div_style'>"+ result+"</span>";
-    new_div_content = old_div_content + result+ '<br><br>';
+    new_div_content = old_div_content + result+ '<br>';
     jQuery ('#history').html(new_div_content);
 }
 show = function(){
@@ -57,8 +57,8 @@ show = function(){
       jQuery('#subbutton').click(minus);
         jQuery('#mulbutton').click(multiply);
           jQuery('#divbutton').click(divide);
-            jQuery('#show_button').click(show);
-            jQuery('#hide_button').click(hide);
+            jQuery('#showbutton').click(show);
+            jQuery('#hidebutton').click(hide);
   }
 
 jQuery(document).ready(setup);
