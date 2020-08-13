@@ -5,7 +5,7 @@ add = function(){
   result = text + result;
     jQuery('#result').text(result)
 
-    old_div_context = jQuery('#history').html();
+    old_div_content = jQuery('#history').html();
     result ="<span id='add_style'>"+ result+"</span>";
     new_div_content = old_div_content + result+ '<br><br>';
     jQuery ('#history').html(new_div_content);
@@ -17,7 +17,7 @@ minus = function(){
   text = jQuery('#operand1').val() + " - " + jQuery('#operand2').val() + " = "
   result = text + result;
     jQuery('#result').html(result)
-    old_div_context = jQuery('#history').html();
+    old_div_content = jQuery('#history').html();
     result ="<span id='min_style'>"+ result+"</span>";
     new_div_content = old_div_content + result+ '<br><br>';
     jQuery ('#history').html(new_div_content);
@@ -29,9 +29,9 @@ multiply= function(){
   text = jQuery('#operand1').val() + " * " + jQuery('#operand2').val() + " = "
   result = text + result;
     jQuery('#result').html(result)
-    old_div_context = jQuery('#history').html();
+    old_div_content = jQuery('#history').html();
     result ="<span id='mul_style'>"+ result + "</span>";
-    new_div_content = old_div_content + result + '<br>,br>';
+    new_div_content = old_div_content + result + '<br><br>';
     jQuery ('#history').html(new_div_content);
 }
 
@@ -41,9 +41,9 @@ divide = function(){
   text = jQuery('#operand1').val() + " / " + jQuery('#operand2').val() + " = "
   result = text + result;
     jQuery('#result').html(result)
-    old_div_context = jQuery('#history').html();
+    old_div_content = jQuery('#history').html();
     result ="<span id='div_style'>"+ result+"</span>";
-    new_div_content = old_div_content + result+ '<br>';
+    new_div_content = old_div_content + result+ '<br><br>';
     jQuery ('#history').html(new_div_content);
 }
 show = function(){

@@ -1,59 +1,46 @@
 add = function(){
 
-  result = parseInt(jQuery('#op1').html()) + parseInt(jQuery(' #op2').html());
+  result = parseInt(jQuery('#operand_1').html()) + parseInt(jQuery('#operand_2').html());
 //jQuery('#operand_1').html('123213213213');
 //alert(result);
 
-  text = jQuery('#op1').html() + " + " + jQuery('#op2').html() + " = "
+  text = jQuery('#operand_1').html() + " + " + jQuery('#operand_2').html() + " = "
 
   jQuery('#result').html(text + result);
 }
-  setup=function(){
-    jQuery('#addbutton').click(add);
-  }
-  jQuery(document0.ready(setup);
 
   // Function of subtraction button
-  subtraction = function(){
+  sub = function(){
 
-    result = parseInt(jQuery('#op1').html())- parseInt(jQuery(' #op2').html());
+    result = parseInt(jQuery('#operand_1').html()) - parseInt(jQuery('#operand_2').html());
 
-    text = jQuery('#op1').html() + " - " + jQuery('#op2').html() + " = "
+    text = jQuery('#operand_1').html() + " - " + jQuery('#operand_2').html() + " = "
     jQuery('#result').html(text + result);
   }
-    setup=function(){
-      // alert ("hi");
 
-      jQuery('#subbutton').click(subtraction);
-    }
-    jQuery(document).ready(setup);
 
     //Function of multiplication button
-    multiplication = function(){
+    mul = function(){
 
-      result = parseInt(jQuery('#op1').html()) * parseInt(jQuery(' #op2').html());
+      result = parseInt(jQuery('#operand_1').html()) * parseInt(jQuery('#operand_2').html());
 
-      text = jQuery('#op1').html() + " * " + jQuery('#op2').html() + " = "
+      text = jQuery('#operand_1').html() + " * " + jQuery('#operand_2').html() + " = "
       jQuery('#result').html(text + result);
     }
-      setup = function(){
-        // alert ("hi");
-
-        jQuery('#mulbutton').click(multiplication);
-      }
-      jQuery(document).ready(setup);
 
       // Function of a division button
 
-      division = function(){
+      div = function(){
 
-        result = parseInt(jQuery('#op1').html()) + parseInt(jQuery(' #op2').html());
+        result = parseInt(jQuery('#operand_1').html()) / parseInt(jQuery('#operand_2').html());
 
-        text = jQuery('#op1').html() + " / " + jQuery('#op2').html() + " = "
+        text = jQuery('#operand_1').html() + " / " + jQuery('#operand_2').html() + " = "
         jQuery('#result').html(text + result);
       }
-        setup=function(){
-
-          jQuery('#divbutton').click(division);
+        setup = function(){
+          jQuery('add_button').click(add);
+            jQuery('sub_button').click(sub);
+              jQuery('mul_button').click(mul);
+                jQuery('div_button').click(div);
         }
         jQuery(document).ready(setup);
