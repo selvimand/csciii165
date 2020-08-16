@@ -52,16 +52,16 @@ show = function(){
   hide= function(){
     jQuery('#history').hide()
   }
- clear= function() {
-    jQuery('#history').empty()
+ clear= () => {
+    $('#history').empty()
   }
-
+//either jQuery or $ can be used to select element
 
   setup = function(){
-    jQuery('#add_button').click(add).mouseover(add);
-      jQuery('#sub_button').click(minus).mouseover(minus);
-        jQuery('#mul_button').click(multiply).mouseover(multiply);
-          jQuery('#div_button').click(divide).mouseover(divide);
+    $('#addbutton').click(add).mouseover(add);
+      jQuery('#subbutton').click(minus).mouseover(minus);
+        jQuery('#mulbutton').click(multiply).mouseover(multiply);
+          jQuery('#divbutton').click(divide).mouseover(divide);
             jQuery('#show_button').click(show);
             jQuery('#hide_button').click(hide);
             jQuery('#clear_button').click(clear);
