@@ -1,6 +1,6 @@
 add = function(){
 
-  result = parseInt(jQuery('#operand1').val()) + parseInt(jQuery(' #operand2').val());
+  result = parseInt(jQuery('#operand1').val()) + parseInt(jQuery('#operand2').val());
   text = jQuery('#operand1').val() + " + " + jQuery('#operand2').val() + " = "
   result = text + result;
     jQuery('#result').text(result)
@@ -52,13 +52,17 @@ show = function(){
   hide= function(){
     jQuery('#history').hide()
   }
+  clear = function(){
+    jQuery('#history').clear()
+  }
   setup = function(){
     jQuery('#addbutton').click(add);
       jQuery('#subbutton').click(minus);
         jQuery('#mulbutton').click(multiply);
           jQuery('#divbutton').click(divide);
-            jQuery('#showbutton').click(show);
-            jQuery('#hidebutton').click(hide);
+            jQuery('#show_button').click(show);
+            jQuery('#hide_button').click(hide);
+            jQuery('#clear_button').click(clear);
   }
 
 jQuery(document).ready(setup);
